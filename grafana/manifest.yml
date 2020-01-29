@@ -1,0 +1,10 @@
+---
+applications:
+- name: lro-grafana
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/binary-buildpack.git
+  command: ./bin/grafana-server web
+  memory: 64M
+  random-route: true
+  env:
+    GF_SERVER_HTTP_PORT: 8080

@@ -1,0 +1,7 @@
+---
+applications:
+  - name: lro-monitoring-demo
+    instances: 1
+    path: target/monitoring-demo-0.0.1-SNAPSHOT.jar
+    services:
+      - monitoring-database
